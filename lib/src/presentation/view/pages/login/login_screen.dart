@@ -7,6 +7,7 @@ import '../../../../../utils/constants/app_colors.dart';
 import '../../../../../utils/constants/app_images.dart';
 import '../../../../../utils/enums.dart';
 import '../../../../../utils/helper/validation_helper.dart';
+import '../../../../config/routes/route_helper.dart';
 import '../../core/widgets/custom_button.dart';
 import '../../core/widgets/loader.dart';
 import 'components/custom_password_field.dart';
@@ -141,7 +142,7 @@ class _LoginScreenState extends State<LoginScreen> {
   void onLogin({required AuthController auth}) {
     if (ValidationHelper.isValidEmail(_userNameController.text)) {
 
-      // Get.offAllNamed(RouteHelper.getDashboardScreen());
+      Get.offAllNamed(RouteHelper.getDashboardScreen());
       _passwordController.clear();
     } else {
       setState(() {
