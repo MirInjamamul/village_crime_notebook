@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:village_crime/src/presentation/view/pages/ward/ward_screen.dart';
 
 import '../../presentation/view/pages/dashboard/start_screen.dart';
 import '../../presentation/view/pages/login/login_screen.dart';
@@ -10,6 +11,7 @@ class RouteHelper {
   static const String splashScreen = '/splashScreen';
   static const String onBoardingScreen = '/onBoardingScreen';
   static const String loginScreen = '/loginScreen';
+  static const String wardScreen = '/wardScreen';
   // static const String signUpScreen = '/signUpScreen';
   // static const String verificationScreen = '/verificationScreen';
   // static const String forgetPasswordScreen = '/forgetPasswordScreen';
@@ -41,10 +43,6 @@ class RouteHelper {
   // static const String createSurveyParticipateScreen =
   //     '/createSurveyParticipateScreen';
   //
-  // // Survey Module
-  // static const String surveyListScreen = '/surveyListScreen';
-  // static const String surveyScreen = '/dashboard/surveyFormPreview';
-  //
   // // language
   // static const String languageScreen = '/language';
   //
@@ -59,6 +57,7 @@ class RouteHelper {
   //     '/donationCampaignListScreen';
   //
   static String getDashboardScreen() => dashBoard;
+  static String getWardScreen() => wardScreen;
   static String getLoginScreen() => loginScreen;
   static String getSplashScreen() => splashScreen;
   static String getSOnBoardingScreen() => onBoardingScreen;
@@ -117,6 +116,7 @@ class RouteHelper {
   static List<GetPage> routes = [
     GetPage(name: dashBoard, page: () => const DashboardScreen()),
     GetPage(name: loginScreen, page: () => const LoginScreen()),
+    GetPage(name: wardScreen, page: () => const WardScreen()),
     GetPage(name: splashScreen, page: () => const SplashScreen()),
     GetPage(name: onBoardingScreen, page: () => const OnboardingScreen()),
   //   GetPage(
