@@ -8,6 +8,7 @@ import 'package:get/get.dart';
 import '../../../../../controllers/user/user_controller.dart';
 import '../../../../../utils/constants/app_colors.dart';
 import '../../../../../utils/constants/app_images.dart';
+import '../../../../config/routes/route_helper.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -46,7 +47,7 @@ class _SplashScreenState extends State<SplashScreen> {
     if(Get.find<UserController>().getUserCount() == 0){
       /// user logged out / unavailable
       Future.delayed(const Duration(seconds: 2),(){
-        // Get.offNamed(RouteHelper.getSOnBoardingScreen());
+        Get.offNamed(RouteHelper.getSOnBoardingScreen());
       });
     }else{
       /// User Logged in

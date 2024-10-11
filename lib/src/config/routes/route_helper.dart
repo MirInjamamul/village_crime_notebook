@@ -1,30 +1,19 @@
 import 'package:get/get.dart';
 
+import '../../presentation/view/pages/onboarding/onboarding_screen.dart';
 import '../../presentation/view/pages/splash/splash_screen.dart';
 
 class RouteHelper {
   // static const String dashBoard = '/';
   static const String splashScreen = '/splashScreen';
-  // static const String onBoardingScreen = '/onBoardingScreen';
+  static const String onBoardingScreen = '/onBoardingScreen';
   // static const String loginScreen = '/loginScreen';
   // static const String signUpScreen = '/signUpScreen';
   // static const String verificationScreen = '/verificationScreen';
   // static const String forgetPasswordScreen = '/forgetPasswordScreen';
   // static const String changePasswordScreen = '/changePasswordScreen';
   //
-  // // NGO
-  // static const String ngoSelectionScreen = '/ngoSelectionScreen';
-  //
-  // static const String menuScreen = '/menu';
-  //
-  // static const String notificationScreen = '/notification';
-  //
-  // static const String findNGOScreen = '/findNGOScreen';
-  // static const String bookmarkNGOScreen = '/bookmarkNGOScreen';
-  //
-  // static const String manageNGODashboardScreen = '/manageNGODashboardScreen';
-  // static const String claimNGOScreen = '/claimNGOScreen';
-  //
+
   // /// Campaign
   // static const String campaignDetailsScreen = '/campaignDetailsScreen';
   // static const String campaignTargetScreen = '/campaignTargetScreen';
@@ -40,15 +29,7 @@ class RouteHelper {
   // static const String paymentSuccessScreen = '/paymentSuccessScreen';
   // static const String subscriptionScreen = '/subscriptionScreen';
   // static const String claimInReviewListScreen = '/claimInReviewListScreen';
-  //
-  // static const String ngoProfileScreen = '/ngoProfileScreen';
-  //
-  // static const String newsArticlesDetailsScreen = '/newsArticlesDetailsScreen';
-  //
-  // static const String manageMyNGOScreen = '/manageMyNgo';
-  // static const String ngoProfileInfoScreen = '/ngoProfileInformationScreen';
-  // static const String myNGOListScreen = '/ngoListScreen';
-  //
+
   // static const String editNGOInfoScreen = '/editNGOInfoScreen';
   // static const String editNGOAdditionalInfoScreen =
   //     '/editNGOAdditionalInfoScreen';
@@ -78,7 +59,7 @@ class RouteHelper {
   // static String getDashboardScreen() => dashBoard;
   // static String getLoginScreen() => loginScreen;
   static String getSplashScreen() => splashScreen;
-  // static String getSOnBoardingScreen() => onBoardingScreen;
+  static String getSOnBoardingScreen() => onBoardingScreen;
   // static String getSignUpScreen() => signUpScreen;
   // static String getVerificationScreen() => verificationScreen;
   // static String getForgetPasswordScreen() => forgetPasswordScreen;
@@ -148,7 +129,7 @@ class RouteHelper {
   //       page: () => const LoginScreen(),
   //       transition: Transition.rightToLeftWithFade),
     GetPage(name: splashScreen, page: () => const SplashScreen()),
-  //   GetPage(name: onBoardingScreen, page: () => const OnboardingScreen()),
+    GetPage(name: onBoardingScreen, page: () => const OnboardingScreen()),
   //   GetPage(
   //       name: signUpScreen,
   //       page: () => const SignUpScreen(),
