@@ -1,6 +1,7 @@
 
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:village_crime/controllers/authentication/auth_controller.dart';
 
 import '../controllers/splash/splash_controller.dart';
 import '../controllers/user/user_controller.dart';
@@ -15,4 +16,5 @@ Future<void> init() async {
   /// Controller
   Get.lazyPut(() => SplashController());
   Get.lazyPut(() => UserController());
+  Get.lazyPut(() => AuthController());
 }

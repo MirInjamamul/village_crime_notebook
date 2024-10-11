@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
 
+import '../../presentation/view/pages/login/login_screen.dart';
 import '../../presentation/view/pages/onboarding/onboarding_screen.dart';
 import '../../presentation/view/pages/splash/splash_screen.dart';
 
@@ -7,7 +8,7 @@ class RouteHelper {
   // static const String dashBoard = '/';
   static const String splashScreen = '/splashScreen';
   static const String onBoardingScreen = '/onBoardingScreen';
-  // static const String loginScreen = '/loginScreen';
+  static const String loginScreen = '/loginScreen';
   // static const String signUpScreen = '/signUpScreen';
   // static const String verificationScreen = '/verificationScreen';
   // static const String forgetPasswordScreen = '/forgetPasswordScreen';
@@ -57,7 +58,7 @@ class RouteHelper {
   //     '/donationCampaignListScreen';
   //
   // static String getDashboardScreen() => dashBoard;
-  // static String getLoginScreen() => loginScreen;
+  static String getLoginScreen() => loginScreen;
   static String getSplashScreen() => splashScreen;
   static String getSOnBoardingScreen() => onBoardingScreen;
   // static String getSignUpScreen() => signUpScreen;
@@ -124,10 +125,7 @@ class RouteHelper {
   //       name: dashBoard,
   //       page: () => const DashboardScreen(),
   //       transition: Transition.rightToLeftWithFade),
-  //   GetPage(
-  //       name: loginScreen,
-  //       page: () => const LoginScreen(),
-  //       transition: Transition.rightToLeftWithFade),
+    GetPage(name: loginScreen, page: () => const LoginScreen()),
     GetPage(name: splashScreen, page: () => const SplashScreen()),
     GetPage(name: onBoardingScreen, page: () => const OnboardingScreen()),
   //   GetPage(

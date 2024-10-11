@@ -82,7 +82,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                           ),
                           ElevatedButton(
                               onPressed: () {
-                                // Get.toNamed(RouteHelper.getLoginScreen());
+                                Get.toNamed(RouteHelper.getLoginScreen());
                               },
                               style: ElevatedButton.styleFrom(
                                   backgroundColor: AppColor.colorYellow70,
