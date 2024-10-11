@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:village_crime/models/thana.dart';
 
-import 'ngo_card_build.dart';
+import 'widgets/thana_widget.dart';
 
 
 class NGOList extends StatelessWidget {

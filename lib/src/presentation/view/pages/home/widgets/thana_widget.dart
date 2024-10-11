@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:village_crime/models/thana.dart';
 
-import '../../../../../utils/constants/app_colors.dart';
-import '../../../../config/routes/route_helper.dart';
-import 'circular_logo_widget.dart';
+import '../../../../../../utils/constants/app_colors.dart';
+import '../../../../../config/routes/route_helper.dart';
+import '../circular_logo_widget.dart';
 
 Widget buildNGOCard(Thana ngo) {
   return GestureDetector(
@@ -104,6 +104,7 @@ Widget buildNGOCard(Thana ngo) {
 Widget buildWardCard(Ward ngo) {
   return GestureDetector(
     onTap: () {
+      Get.toNamed(RouteHelper.getDivisionScreen());
     },
     child: Card(
       margin: const EdgeInsets.symmetric(vertical: 8.0),

@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
+import 'package:village_crime/models/division.dart';
 
 import '../../models/thana.dart';
 
@@ -216,5 +217,18 @@ class HomeController extends GetxController implements GetxService {
     ];
 
     update();
+  }
+
+  final List<Division> _division = [
+    Division(id: 1, divisionName: "1st Division"),
+    Division(id: 2, divisionName: "2nd Division"),
+    Division(id: 3, divisionName: "3rd Division"),
+    Division(id: 4, divisionName: "4th Division"),
+    Division(id: 5, divisionName: "5th Division"),
+  ];
+
+  List<Division> get division => _division;
+  List<Division> getDivision() {
+    return _division;
   }
 }

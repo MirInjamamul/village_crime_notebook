@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:village_crime/src/presentation/view/pages/home/divistion_screen.dart';
 import 'package:village_crime/src/presentation/view/pages/ward/ward_screen.dart';
 
 import '../../presentation/view/pages/dashboard/start_screen.dart';
@@ -12,6 +13,7 @@ class RouteHelper {
   static const String onBoardingScreen = '/onBoardingScreen';
   static const String loginScreen = '/loginScreen';
   static const String wardScreen = '/wardScreen';
+  static const String divisionScreen = '/divisionScreen';
   // static const String signUpScreen = '/signUpScreen';
   // static const String verificationScreen = '/verificationScreen';
   // static const String forgetPasswordScreen = '/forgetPasswordScreen';
@@ -58,6 +60,7 @@ class RouteHelper {
   //
   static String getDashboardScreen() => dashBoard;
   static String getWardScreen() => wardScreen;
+  static String getDivisionScreen() => divisionScreen;
   static String getLoginScreen() => loginScreen;
   static String getSplashScreen() => splashScreen;
   static String getSOnBoardingScreen() => onBoardingScreen;
@@ -117,6 +120,7 @@ class RouteHelper {
     GetPage(name: dashBoard, page: () => const DashboardScreen()),
     GetPage(name: loginScreen, page: () => const LoginScreen()),
     GetPage(name: wardScreen, page: () => const WardScreen()),
+    GetPage(name: divisionScreen, page: () => const DivisionScreen()),
     GetPage(name: splashScreen, page: () => const SplashScreen()),
     GetPage(name: onBoardingScreen, page: () => const OnboardingScreen()),
   //   GetPage(
