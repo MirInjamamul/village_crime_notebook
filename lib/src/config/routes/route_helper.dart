@@ -1,11 +1,12 @@
 import 'package:get/get.dart';
 
+import '../../presentation/view/pages/dashboard/start_screen.dart';
 import '../../presentation/view/pages/login/login_screen.dart';
 import '../../presentation/view/pages/onboarding/onboarding_screen.dart';
 import '../../presentation/view/pages/splash/splash_screen.dart';
 
 class RouteHelper {
-  // static const String dashBoard = '/';
+  static const String dashBoard = '/';
   static const String splashScreen = '/splashScreen';
   static const String onBoardingScreen = '/onBoardingScreen';
   static const String loginScreen = '/loginScreen';
@@ -57,7 +58,7 @@ class RouteHelper {
   // static const String donationCampaignListScreen =
   //     '/donationCampaignListScreen';
   //
-  // static String getDashboardScreen() => dashBoard;
+  static String getDashboardScreen() => dashBoard;
   static String getLoginScreen() => loginScreen;
   static String getSplashScreen() => splashScreen;
   static String getSOnBoardingScreen() => onBoardingScreen;
@@ -76,14 +77,7 @@ class RouteHelper {
   //
   // static String getNewsArticlesDetailsScreen() => newsArticlesDetailsScreen;
   //
-  // static String getManageNGODashboardScreen() => manageNGODashboardScreen;
-  // static String getClamNGOScreen() => claimNGOScreen;
-  // static String getCampaignDetailsScreen() => campaignDetailsScreen;
-  // static String getCampaignTargetScreen() => campaignTargetScreen;
-  // static String getCampaignTeamScreen() => campaignTeamScreen;
-  // static String getClaimNGOSearchScreen() => claimNGOSearchScreen;
-  // static String getClaimNGOVerificationScreen() => claimNGOVerificationScreen;
-  // static String getClaimNGOReviewSubmitScreen() => claimNGOReviewSubmitScreen;
+
   // static String getRegisterNGOScreen() => registerNGOScreen;
   // static String getCreateProjectScreen() => createProjectScreen;
   // static String getPaymentSuccessScreen() => paymentSuccessScreen;
@@ -121,10 +115,7 @@ class RouteHelper {
   // static String getDonationCampaignListScreen() => donationCampaignListScreen;
   //
   static List<GetPage> routes = [
-  //   GetPage(
-  //       name: dashBoard,
-  //       page: () => const DashboardScreen(),
-  //       transition: Transition.rightToLeftWithFade),
+    GetPage(name: dashBoard, page: () => const DashboardScreen()),
     GetPage(name: loginScreen, page: () => const LoginScreen()),
     GetPage(name: splashScreen, page: () => const SplashScreen()),
     GetPage(name: onBoardingScreen, page: () => const OnboardingScreen()),
