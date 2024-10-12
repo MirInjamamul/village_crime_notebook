@@ -220,11 +220,11 @@ class HomeController extends GetxController implements GetxService {
   }
 
   final List<Division> _division = [
-    Division(id: 1, divisionName: "1st Division"),
-    Division(id: 2, divisionName: "2nd Division"),
-    Division(id: 3, divisionName: "3rd Division"),
-    Division(id: 4, divisionName: "4th Division"),
-    Division(id: 5, divisionName: "5th Division"),
+    Division(id: 1, divisionName: "১ম খণ্ড"), // 1st Division
+    Division(id: 2, divisionName: "২য় খণ্ড"), // 2nd Division
+    Division(id: 3, divisionName: "৩য় খণ্ড"), // 3rd Division
+    Division(id: 4, divisionName: "৪র্থ খণ্ড"), // 4th Division
+    Division(id: 5, divisionName: "৫ম খণ্ড"), // 5th Division
   ];
 
   List<Division> get division => _division;
